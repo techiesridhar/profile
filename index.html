@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sridhar Nallappasamy - Personal Profile</title>
+    <!-- 1. Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 2. Load Inter font (used by the inspiration site) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- 3. Custom styles -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* A very light gray, similar to the image */
+        }
+        /* Style for the active navigation link */
+        .nav-link.active {
+            color: #111827; /* Dark gray */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="flex flex-col md:flex-row min-h-screen">
+        
+        <!-- === Sidebar Navigation === -->
+        <nav class="w-full md:w-64 bg-white md:fixed md:h-screen p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-200">
+            <!-- Header with Toggle Button -->
+            <div class="flex justify-between items-center">
+                <!-- Your Name / Logo -->
+                <h1 class="text-2xl font-bold text-gray-900">Sridhar Nallappasamy</h1>
+                
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-toggle" class="md:hidden p-1 text-gray-600 hover:text-gray-900" aria-label="Toggle menu">
+                    <svg id="menu-open-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Navigation Links -->
+            <ul id="nav-links" class="hidden md:block mt-10 space-y-4">
+                <li>
+                    <a href="#about" 
+                       class="nav-link text-gray-600 hover:text-gray-900 text-lg active">
+                       About
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience" 
+                       class="nav-link text-gray-600 hover:text-gray-900 text-lg">
+                       Experience
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" 
+                       class="nav-link text-gray-600 hover:text-gray-900 text-lg">
+                       Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- === Main Content Area === -->
+        <main class="flex-1 md:ml-64 p-6 md:p-12">
+
+            <!-- "About" Section (Default) -->
+            <section id="about" class="content-section max-w-4xl">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+                    Data & Al Product Leader
+                </h2>
+                <p class="mt-2 text-2xl text-gray-700 leading-relaxed">
+                    Digital Transformation | Strategic Data Products
+                </p>
+
+                <p class="mt-6 text-lg text-gray-700 leading-relaxed">
+                    I'm a highly motivated Engineering Manager passionate about working with great people to build world-changing products. I had a fantastic time leading several large programs and engineering teams and building products and technologies that generated commercial value for the business. I also care deeply about building a great company culture and creating an environment where everyone can do their best work.
+                </p>
+                <p class="mt-4 text-lg text-gray-700 leading-relaxed">
+                    I have worked with various organisations across North America and the Asia Pacific, spanning multiple industry verticals such as Consumer Packaged Goods, Manufacturing, E-Commerce and Telecom.
+                </p>
+
+                <h3 class="text-3xl font-bold text-gray-900 mt-10 mb-5">Top Skills</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="bg-gray-200 text-gray-800 text-base font-medium px-4 py-2 rounded-full">Strategic Partnerships</span>
+                    <span class="bg-gray-200 text-gray-800 text-base font-medium px-4 py-2 rounded-full">Cross-functional Team Leadership</span>
+                    <span class="bg-gray-200 text-gray-800 text-base font-medium px-4 py-2 rounded-full">Stakeholder Management</span>
+                </div>
+            </section>
+
+            <!-- "Experience" Section -->
+            <section id="experience" class="content-section max-w-4xl pt-16 md:pt-24">
+                <h2 class="text-4xl font-bold text-gray-900 mb-8">Experience</h2>
+                
+                <!-- Experience Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+                    
+                    <!-- Experience Card 1 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900">Senior Product Manager</h3>
+                        <p class="text-md text-gray-600 mt-1">BAT | Sep 2025 - Present (3 months)</p>
+                        <ul class="mt-3 list-disc list-outside ml-5 text-gray-700 space-y-2">
+                            <li>Scope 1, 2 & 3 Emissions Management - Lead end-to-end product design and data enablement for emissions data collection, validation, and reporting across corporate and supply chain operations.</li>
+                            <li>Scope 3 Supplier Engagement - Develop scalable systems for primary emission data collection from external suppliers, ensuring traceability, accuracy, and compliance with evolving global standards.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Experience Card 2 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900">Senior Product Manager - Sustainability Digital Transformation Program</h3>
+                        <p class="text-md text-gray-600 mt-1">BAT | Aug 2023 - Sep 2025 (2 years 2 months)</p>
+                         <ul class="mt-3 list-disc list-outside ml-5 text-gray-700 space-y-2">
+                            <li>Championed data-driven sustainability strategies, enabling scalable, impact-focused ESG reporting solutions.</li>
+                            <li>Leading a 3-year enterprise-wide Sustainability digital transformation program, delivering a cutting-edge sustainability reporting platform (MSM) built on Microsoft Fabric and Al.</li>
+                            <li>Automated ESG KPI reporting (Scope 1, 2 & 3) with embedded governance and controls, ensuring CSRD/EUDR compliance and audit readiness.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Card 3 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                        <h3 class="text-xl font-semibold text-gray-900">Global Lead - Machine Learning Engineering</h3>
+                        <p class="text-md text-gray-600 mt-1">BAT | Jan 2022 - Aug 2023 (1 year 8 months)</p>
+                         <ul class="mt-3 list-disc list-outside ml-5 text-gray-700 space-y-2">
+                            <li>Set technical directions for Al Products to support the needs & scale of modern Al systems, including monitoring, detection and system-level safety mitigation solutions.</li>
+                            <li>Coach and nurture engineers to accelerate their growth and learning.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- "Contact" Section -->
+            <section id="contact" class="content-section max-w-4xl pt-16 md:pt-24">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    I'm always open to new opportunities and collaborations. Feel free to reach out.
+                </p>
+                
+                <ul class="mt-8 space-y-5">
+                    <li>
+                        <a href="mailto:techiesridhar@gmail.com" class="text-lg text-blue-600 hover:underline">
+                            techiesridhar@gmail.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/techiesridhar/" target="_blank" rel="noopener noreferrer" class="text-lg text-blue-600 hover:underline">
+                            LinkedIn Profile
+                        </a>
+                    </li>
+                    <li>
+                        <span class="text-lg text-gray-700">
+                            +60175400224 (Mobile)
+                        </span>
+                    </li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- JavaScript for scroll-based active link highlighting -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.content-section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // --- New Mobile Menu Toggle Logic ---
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const navLinksContainer = document.getElementById('nav-links');
+            const menuOpenIcon = document.getElementById('menu-open-icon');
+            const menuCloseIcon = document.getElementById('menu-close-icon');
+
+            if (mobileMenuToggle && navLinksContainer && menuOpenIcon && menuCloseIcon) {
+                mobileMenuToggle.addEventListener('click', () => {
+                    navLinksContainer.classList.toggle('hidden');
+                    menuOpenIcon.classList.toggle('hidden');
+                    menuCloseIcon.classList.toggle('hidden');
+                });
+
+                // Close mobile menu when a link is clicked
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        // Check if we are in mobile view (screen width < 768px, 'md' breakpoint)
+                        if (window.innerWidth < 768) {
+                            navLinksContainer.classList.add('hidden');
+                            menuOpenIcon.classList.remove('hidden');
+                            menuCloseIcon.classList.add('hidden');
+                        }
+                    });
+                });
+            }
+            // --- End of New Mobile Menu Toggle Logic ---
+
+
+            if (sections.length === 0 || navLinks.length === 0) {
+                return;
+            }
+
+            const observerOptions = {
+                root: null, // observes intersections relative to the viewport
+                rootMargin: '-40% 0px -40% 0px', // triggers when section is in the middle 20% of viewport
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.id;
+                        
+                        // Remove active class from all links
+                        navLinks.forEach(link => {
+                            link.classList.remove('active');
+                        });
+
+                        // Add active class to the corresponding link
+                        const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            // Observe each section
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+</body>
+</html>
