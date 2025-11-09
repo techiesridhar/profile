@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Sridhar Nallappasamy - Personal Profile&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 1. Load Tailwind CSS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 2. Load Inter font (used by the inspiration site) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 3. Custom styles --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>html {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scroll-behavior: smooth;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9fafb; /* A very light gray, similar to the image */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>/* Style for the active navigation link */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #111827; /* Dark gray */</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="text-gray-800"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="flex flex-col md:flex-row min-h-screen"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- === Sidebar Navigation === --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="w-full md:w-64 bg-white md:fixed md:h-screen p-6 md:p-8 border-b md:border-b-0 md:border-r border-gray-200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Header with Toggle Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex justify-between items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Your Name / Logo --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h1 class="text-2xl font-bold text-gray-900"&gt;Sridhar Nallappasamy&lt;/h1&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Mobile Menu Toggle Button --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="mobile-menu-toggle" class="md:hidden p-1 text-gray-600 hover:text-gray-900" aria-label="Toggle menu"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg id="menu-open-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg id="menu-close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Navigation Links --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul id="nav-links" class="hidden md:block mt-10 space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#about"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                       </span>class="nav-link text-gray-600 hover:text-gray-900 text-lg active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                       </span>About</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#experience"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                       </span>class="nav-link text-gray-600 hover:text-gray-900 text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                       </span>Experience</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#contact"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                       </span>class="nav-link text-gray-600 hover:text-gray-900 text-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                       </span>Contact</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- === Main Content Area === --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;main class="flex-1 md:ml-64 p-6 md:p-12"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- "About" Section (Default) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="about" class="content-section max-w-4xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-4xl md:text-5xl font-bold text-gray-900"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Data &amp; Al Product Leader</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-2 text-2xl text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>Digital Transformation | Strategic Data Products</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-6 text-lg text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>I'm a highly motivated Engineering Manager passionate about working with great people to build world-changing products. I had a fantastic time leading several large programs and engineering teams and building products and technologies that generated commercial value for the business. I also care deeply about building a great company culture and creating an environment where everyone can do their best work.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="mt-4 text-lg text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>I have worked with various organisations across North America and the Asia Pacific, spanning multiple industry verticals such as Consumer Packaged Goods, Manufacturing, E-Commerce and Telecom.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3 class="text-3xl font-bold text-gray-900 mt-10 mb-5"&gt;Top Skills&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-wrap gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="bg-gray-200 text-gray-800 text-base font-medium px-4 py-2 rounded-full"&gt;Strategic Partnerships&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="bg-gray-200 text-gray-800 text-base font-medium px-4 py-2 rounded-full"&gt;Cross-functional Team Leadership&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;span class="bg-gray-200 text-gray-800 text-base font-medium px-4 py-2 rounded-full"&gt;Stakeholder Management&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- "Experience" Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="experience" class="content-section max-w-4xl pt-16 md:pt-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-4xl font-bold text-gray-900 mb-8"&gt;Experience&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Experience Grid --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-1 md:grid-cols-1 gap-8"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Experience Card 1 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold text-gray-900"&gt;Senior Product Manager&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600 mt-1"&gt;BAT | Sep 2025 - Present (3 months)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="mt-3 list-disc list-outside ml-5 text-gray-700 space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Scope 1, 2 &amp; 3 Emissions Management - Lead end-to-end product design and data enablement for emissions data collection, validation, and reporting across corporate and supply chain operations.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Scope 3 Supplier Engagement - Develop scalable systems for primary emission data collection from external suppliers, ensuring traceability, accuracy, and compliance with evolving global standards.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Experience Card 2 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold text-gray-900"&gt;Senior Product Manager - Sustainability Digital Transformation Program&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600 mt-1"&gt;BAT | Aug 2023 - Sep 2025 (2 years 2 months)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>&lt;ul class="mt-3 list-disc list-outside ml-5 text-gray-700 space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Championed data-driven sustainability strategies, enabling scalable, impact-focused ESG reporting solutions.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Leading a 3-year enterprise-wide Sustainability digital transformation program, delivering a cutting-edge sustainability reporting platform (MSM) built on Microsoft Fabric and Al.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Automated ESG KPI reporting (Scope 1, 2 &amp; 3) with embedded governance and controls, ensuring CSRD/EUDR compliance and audit readiness.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Experience Card 3 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-semibold text-gray-900"&gt;Global Lead - Machine Learning Engineering&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-md text-gray-600 mt-1"&gt;BAT | Jan 2022 - Aug 2023 (1 year 8 months)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>&lt;ul class="mt-3 list-disc list-outside ml-5 text-gray-700 space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Set technical directions for Al Products to support the needs &amp; scale of modern Al systems, including monitoring, detection and system-level safety mitigation solutions.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Coach and nurture engineers to accelerate their growth and learning.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- "Contact" Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;section id="contact" class="content-section max-w-4xl pt-16 md:pt-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-4xl font-bold text-gray-900 mb-6"&gt;Get in Touch&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-lg text-gray-700 leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>I'm always open to new opportunities and collaborations. Feel free to reach out.</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                </span></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul class="mt-8 space-y-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="mailto:techiesridhar@gmail.com" class="text-lg text-blue-600 hover:underline"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>techiesridhar@gmail.com</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;a href="https://www.linkedin.com/in/techiesridhar/" target="_blank" rel="noopener noreferrer" class="text-lg text-blue-600 hover:underline"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>LinkedIn Profile</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-lg text-gray-700"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>+60175400224 (Mobile)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- JavaScript for scroll-based active link highlighting --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const sections = document.querySelectorAll('.content-section');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const navLinks = document.querySelectorAll('.nav-link');</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- New Mobile Menu Toggle Logic ---</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const mobileMenuToggle = document.getElementById('mobile-menu-toggle');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const navLinksContainer = document.getElementById('nav-links');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const menuOpenIcon = document.getElementById('menu-open-icon');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const menuCloseIcon = document.getElementById('menu-close-icon');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (mobileMenuToggle &amp;&amp; navLinksContainer &amp;&amp; menuOpenIcon &amp;&amp; menuCloseIcon) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>mobileMenuToggle.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>navLinksContainer.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>menuOpenIcon.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>menuCloseIcon.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>// Close mobile menu when a link is clicked</p>
+<p class="p1"><span class="Apple-converted-space">                </span>navLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>link.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// Check if we are in mobile view (screen width &lt; 768px, 'md' breakpoint)</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (window.innerWidth &lt; 768) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>navLinksContainer.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>menuOpenIcon.classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>menuCloseIcon.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// --- End of New Mobile Menu Toggle Logic ---</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (sections.length === 0 || navLinks.length === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const observerOptions = {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>root: null, // observes intersections relative to the viewport</p>
+<p class="p1"><span class="Apple-converted-space">                </span>rootMargin: '-40% 0px -40% 0px', // triggers when section is in the middle 20% of viewport</p>
+<p class="p1"><span class="Apple-converted-space">                </span>threshold: 0</p>
+<p class="p1"><span class="Apple-converted-space">            </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const observer = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>if (entry.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const id = entry.target.id;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// Remove active class from all links</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>navLinks.forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>link.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>// Add active class to the corresponding link</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>if (activeLink) {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>activeLink.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}, observerOptions);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Observe each section</p>
+<p class="p1"><span class="Apple-converted-space">            </span>sections.forEach(section =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>observer.observe(section);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
